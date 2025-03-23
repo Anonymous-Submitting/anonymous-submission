@@ -1,0 +1,107 @@
+{
+  "title": "Interactive ML Glossary",
+  "description": "An interactive glossary of key Machine Learning terms with definitions.",
+  "sections": [
+    {
+      "title": "Key Concepts in Machine Learning",
+      "terms": [
+        {
+          "term": "Neural Networks",
+          "definition": "A set of algorithms modeled loosely after the human brain, designed to recognize patterns"
+        },
+        {
+          "term": "Train-Test Split",
+          "definition": "The process of dividing a dataset into training and testing sets to evaluate model performance"
+        },
+        {
+          "term": "Dropout",
+          "definition": "A technique to prevent overfitting by randomly omitting subsets of data during training"
+        },
+        {
+          "term": "Dimensionality Reduction",
+          "definition": "A technique to reduce the number of features in a dataset while preserving important information"
+        }
+      ]
+    },
+    {
+      "title": "Applications of Machine Learning",
+      "terms": [
+        {
+          "term": "Healthcare",
+          "definition": "Using ML to analyze medical data and assist in diagnosis"
+        },
+        {
+          "term": "Fraud Detection",
+          "definition": "Using ML to detect fraudulent transactions"
+        },
+        {
+          "term": "Recommendation Systems",
+          "definition": "Using ML to recommend products or content to users"
+        },
+        {
+          "term": "Natural Language Processing (NLP)",
+          "definition": "Using ML to understand and generate human language"
+        }
+      ]
+    },
+    {
+      "title": "Popular ML Algorithms",
+      "terms": [
+        {
+          "term": "Linear Regression",
+          "definition": "A supervised learning algorithm used for classification and regression"
+        },
+        {
+          "term": "Logistic Regression",
+          "definition": "A supervised learning algorithm used for classification tasks"
+        },
+        {
+          "term": "Decision Trees",
+          "definition": "A tree-based algorithm used for classification and regression"
+        },
+        {
+          "term": "Deep Neural Networks",
+          "definition": "A neural network with multiple layers used for complex tasks"
+        }
+      ]
+    },
+    {
+      "title": "Resources to Learn ML",
+      "links": [
+        {
+          "name": "Coursera: Machine Learning by Andrew Ng",
+          "url": "https://www.coursera.org/learn/machine-learning"
+        },
+        {
+          "name": "Kaggle: Intro to Machine Learning",
+          "url": "https://www.kaggle.com/learn/intro-to-machine-learning"
+        },
+        {
+          "name": "Scikit-learn: Python Library for ML",
+          "url": "https://scikit-learn.org/"
+        },
+        {
+          "name": "TensorFlow: ML Framework",
+          "url": "https://www.tensorflow.org/"
+        }
+      ]
+    }
+  ],
+  "styles": {
+    "term": {
+      "color": "darkblue",
+      "text-decoration": "underline",
+      "cursor": "pointer"
+    },
+    "definition": {
+      "background-color": "#f9f9f9",
+      "border": "1px solid #ccc",
+      "padding": "10px",
+      "margin-top": "5px",
+      "border-radius": "5px"
+    }
+  },
+  "functionality": {
+    "tooltipBehavior": "Definitions appear below the term when clicked and disappear when clicking outside."
+  }
+}

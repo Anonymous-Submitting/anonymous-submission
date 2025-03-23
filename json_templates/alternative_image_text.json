@@ -1,0 +1,37 @@
+{
+  "title": "Accessible Images",
+  "description": "A webpage demonstrating the use of accessible images with descriptive `alt` text.",
+  "images": [
+    {
+      "type": "placeholder",
+      "src": "https://via.placeholder.com/150",
+      "alt": "A placeholder image representing a 150x150 pixel square",
+      "description": "This is a placeholder image with `alt` text describing its purpose."
+    },
+    {
+      "type": "nature",
+      "src": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&h=150&q=80",
+      "alt": "A beautiful landscape with mountains, trees, and a clear blue sky",
+      "description": "This is a nature image with descriptive `alt` text for accessibility."
+    }
+  ],
+  "styles": {
+    "body": {
+      "font-family": "Arial, sans-serif",
+      "line-height": "1.6",
+      "margin": "20px"
+    },
+    "h1": {
+      "color": "#333"
+    },
+    "p": {
+      "margin-bottom": "15px"
+    },
+    "img": {
+      "max-width": "100%",
+      "height": "auto",
+      "border-radius": "8px",
+      "margin-bottom": "15px"
+    }
+  }
+}
