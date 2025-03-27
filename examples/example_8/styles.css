@@ -1,30 +1,53 @@
 body {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    line-height: 1.6;
-}
-
-.highlight {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .keyword {
     color: #007BFF;
     font-weight: bold;
     cursor: pointer;
-}
-
-.tooltip {
-    background-color: #F0F8FF;
-    border: 1px solid #007BFF;
-    border-radius: 4px;
-    padding: 5px;
-    display: none;
+    text-decoration: underline dotted;
+  }
+  
+  .keyword:hover::after {
+    content: attr(data-hint);
     position: absolute;
-    z-index: 10;
-    width: 250px;
-}
-
-.term {
-    position: relative;
-    display: inline-block;
-}
-
-.term:hover .tooltip {
-    display: block;
-}
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 14px;
+    z-index: 1000;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  .controls select, .controls button {
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .text-small {
+    font-size: 14px;
+  }
+  
+  .text-medium {
+    font-size: 16px;
+  }
+  
+  .text-large {
+    font-size: 18px;
+  }

@@ -1,11 +1,54 @@
-<div class="container">
-    <h1>Topic Model</h1>
-    <p>In <span class="tooltip" data-title="A field of AI that helps computers understand human language.">natural language processing</span>, 
-    a <span class="highlight">topic model</span> is used to discover hidden topics in text.</p>
-    <p>For example, in documents about animals, words like <span class="highlight">"dog"</span> and <span class="highlight">"bone"</span> 
-    appear more often in dog-related texts.</p>
-    <p>A document typically involves multiple topics, with different proportions.</p>
-    <p>The <span class="tooltip" data-title="A mathematical model to group words by topic.">topic model</span> helps 
-    in analyzing documents based on word patterns.</p>
-    <a href="https://en.wikipedia.org/wiki/Topic_model" class="btn" target="_blank">Learn More</a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLP and Tokenization</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="controls">
+    <label for="font-select">Font:</label>
+    <select id="font-select">
+      <option value="Arial">Arial</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Courier New">Courier New</option>
+      <option value="Verdana">Verdana</option>
+    </select>
+
+    <label for="text-size-select">Text Size:</label>
+    <select id="text-size-select">
+      <option value="text-small">Small</option>
+      <option value="text-medium">Medium</option>
+      <option value="text-large">Large</option>
+    </select>
+
+    <button id="theme-toggle">Toggle Dark Mode</button>
+    <button id="focus-mode-toggle">Toggle Focus Mode</button>
+    <button id="text-to-speech">Read Aloud</button>
+  </div>
+
+  <div class="progress-bar">
+    <div class="progress"></div>
+  </div>
+
+  <div class="break-reminder" id="break-reminder">
+    Time for a break! Take a moment to relax.
+  </div>
+
+  <h1>Natural Language Processing (NLP) and Tokenization</h1>
+  <div id="content">
+    <p>
+      <span class="keyword" data-hint="A subfield of AI that enables machines to understand and process human language.">Natural Language Processing (NLP)</span> is a field of <span class="keyword" data-hint="The simulation of human intelligence in machines.">artificial intelligence</span> that focuses on the interaction between computers and humans through natural language.
+    </p>
+    <p>
+      <span class="keyword" data-hint="The process of breaking down text into smaller units like words, phrases, or symbols.">Tokenization</span> is a fundamental step in NLP where text is split into smaller units called <span class="keyword" data-hint="Individual units of text, such as words or sentences, produced by tokenization.">tokens</span>, such as words or sentences.
+    </p>
+    <p>
+      Another important concept in NLP is <span class="keyword" data-hint="The process of reducing words to their base or root form.">stemming</span>, which reduces words to their root form. For example, the words 'running', 'runs', and 'ran' can all be stemmed to the root word 'run'. This helps in simplifying <span class="keyword" data-hint="The process of extracting meaningful information from text.">text analysis</span>.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

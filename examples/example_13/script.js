@@ -1,19 +1,13 @@
-const originalText = document.getElementById('text').innerHTML; // Save original text
+const accordions = document.querySelectorAll('.accordion');
 
-function highlightText() {
-    const searchTerm = document.getElementById('search').value.trim();
-    const textElement = document.getElementById('text');
-
-    if (!searchTerm) {
-        alert("Please enter a keyword to search.");
-        return;
-    }
-
-    const regex = new RegExp(`(${searchTerm})`, 'gi');
-    textElement.innerHTML = originalText.replace(regex, '<span class="highlight">$1</span>');
-}
-
-function resetHighlight() {
-    document.getElementById('text').innerHTML = originalText; // Restore original text
-    document.getElementById('search').value = ''; // Clear search box
-}
+accordions.forEach(accordion => {
+    accordion.addEventListener('click', () => {
+        accordion.classList.toggle('active');
+        const panel = accordion.nextElementSibling;
+        if (panel.style.display === 'block') {
+            panel.style.display = 'none';
+        } else {
+            panel.style.display = 'block';
+        }
+    });
+});

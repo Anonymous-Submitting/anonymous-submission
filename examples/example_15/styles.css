@@ -1,20 +1,83 @@
+/* Basic styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark gray text */
 }
 
-h1 {
-    color: #333;
+h1, h2 {
+    color: #222222; /* Slightly darker for headings */
 }
 
 p {
     margin-bottom: 15px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-color: #007BFF; /* Blue button color */
+    color: #ffffff; /* White text on button */
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.example {
+    padding: 15px;
+    border: 1px solid #dddddd; /* Light border */
+    background-color: #f9f9f9; /* Light background */
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.example h3 {
+    margin-top: 0;
+    color: #444444; /* Dark gray for subheadings */
+}
+
+a {
+    color: #007BFF; /* Blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* High contrast mode */
+.high-contrast {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+}
+
+.high-contrast h1,
+.high-contrast h2,
+.high-contrast h3 {
+    color: #ffffff; /* White text for headings */
+}
+
+.high-contrast .example {
+    background-color: #333333; /* Dark background for examples */
+    border-color: #555555; /* Dark border */
+}
+
+.high-contrast a {
+    color: #00a8ff; /* Bright blue for links */
+}
+
+.high-contrast button {
+    background-color: #ffffff; /* White button background */
+    color: #000000; /* Black text on button */
+}
+
+.high-contrast button:hover {
+    background-color: #cccccc; /* Light gray on hover */
 }

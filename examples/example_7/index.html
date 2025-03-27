@@ -3,26 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Standard Deviation in Statistics</title>
+  <title>Interactive Tutorial on Text Tokenization</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <p>
-      The <span class="highlight" id="standard_deviation">standard deviation</span> is a measure of the amount of variation or dispersion in a <span class="highlight" id="dataset">dataset</span>. A low standard deviation means that the values tend to be close to the <span class="highlight" id="mean">mean</span> of the <span class="highlight" id="dataset">dataset</span>, while a high standard deviation means that the values are spread out over a wider range.
-    </p>
 
-    <p>
-      <span class="tooltip" title="Standard deviation measures the amount of variation or dispersion in a set of values.">What is standard deviation?</span>
-    </p>
+  <h1>Interactive Tutorial on Text Tokenization</h1>
+  <p>Welcome to this tutorial on text tokenization. Follow the steps below to learn about the process!</p>
 
-    <p>
-      To learn more about the <span class="tooltip" title="A dataset is a collection of data, often presented in the form of a table or matrix.">dataset</span>, click <a href="https://en.wikipedia.org/wiki/Dataset" target="_blank">here</a> and for the <span class="tooltip" title="The mean is the sum of all values in a dataset divided by the number of values, commonly referred to as the average.">mean</span>, click <a href="https://en.wikipedia.org/wiki/Mean" target="_blank">here</a>.
-    </p>
-
-    <button class="btn" onclick="responsiveVoice.speak(document.body.innerText)">Read Aloud</button>
+  <div id="tutorial-buttons">
+    <button onclick="showExplanation('tokenization')">Step 1: What is Text Tokenization?</button>
+    <button onclick="showExplanation('types')">Step 2: Types of Tokenization</button>
+    <button onclick="showExplanation('process')">Step 3: Tokenization Process Example</button>
+    <button onclick="showExplanation('importance')">Step 4: Why is Tokenization Important?</button>
   </div>
+
+  <div id="explanation"></div>
+
+  <script src="script.js"></script>
+  
 </body>
 </html>

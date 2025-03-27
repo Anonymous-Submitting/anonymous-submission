@@ -1,29 +1,78 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #222;
+    color: #ddd;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    background: #333;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    color: #87CEFA;
+    text-align: center;
+    font-size: 28px;
 }
 
 .highlight {
-  background-color: yellow;
-  font-weight: bold;
+    background: #87CEFA;
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: #222;
+    font-weight: bold;
 }
 
-#tutorial-buttons {
-  margin-top: 20px;
+.tooltip {
+    position: relative;
+    border-bottom: 1px dashed #87CEFA;
+    cursor: pointer;
+    color: #87CEFA;
 }
 
-#explanation {
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  background-color: #f9f9f9;
+.tooltip::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 120%;
+    background: rgba(255, 255, 255, 0.9);
+    color: #222;
+    padding: 6px;
+    border-radius: 6px;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 14px;
 }
 
-#explanation p {
-  font-size: 16px;
+.tooltip:hover::after {
+    visibility: visible;
+    opacity: 1;
 }
 
-a {
-  color: blue;
-  text-decoration: underline;
+.btn {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 15px;
+    background: #87CEFA;
+    color: #222;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #5f9ea0;
 }

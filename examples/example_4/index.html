@@ -1,54 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NLP and Tokenization</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Bayes' Theorem</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="controls">
-    <label for="font-select">Font:</label>
-    <select id="font-select">
-      <option value="Arial">Arial</option>
-      <option value="Times New Roman">Times New Roman</option>
-      <option value="Courier New">Courier New</option>
-      <option value="Verdana">Verdana</option>
-    </select>
 
-    <label for="text-size-select">Text Size:</label>
-    <select id="text-size-select">
-      <option value="text-small">Small</option>
-      <option value="text-medium">Medium</option>
-      <option value="text-large">Large</option>
-    </select>
+    <h1>Understanding Bayes' Theorem</h1>
 
-    <button id="theme-toggle">Toggle Dark Mode</button>
-    <button id="focus-mode-toggle">Toggle Focus Mode</button>
-    <button id="text-to-speech">Read Aloud</button>
-  </div>
+    <p>Bayes' Theorem is a fundamental concept in probability theory that describes how to update the
+        <span class="tooltip" title="A measure of the likelihood that an event will occur, expressed as a number between 0 and 1.">probability</span>
+        of a hypothesis as more evidence or information becomes available. It is named after the Reverend Thomas Bayes, who formulated the theorem in the 18th century. The theorem is widely used in statistics, machine learning, and data analysis.</p>
 
-  <div class="progress-bar">
-    <div class="progress"></div>
-  </div>
+    <p>The formula for Bayes' Theorem is:</p>
+    <p><code>P(A|B) = [P(B|A) * P(A)] / P(B)</code></p>
 
-  <div class="break-reminder" id="break-reminder">
-    Time for a break! Take a moment to relax.
-  </div>
+    <p>Where:</p>
+    <ul>
+        <li><span class="highlight" title="The updated probability of a hypothesis after considering new evidence. It reflects the revised belief about the hypothesis.">P(A|B)</span> is the <strong>posterior probability</strong> of A given B.</li>
+        <li><span class="highlight" title="Measures how likely the evidence is under a specific hypothesis. It is crucial for updating beliefs in Bayesian inference.">P(B|A)</span> is the <strong>likelihood</strong> of B given A.</li>
+        <li><span class="highlight" title="The probability of an event occurring before any evidence or information is taken into account. It can be based on previous knowledge or assumptions.">P(A)</span> is the <strong>prior probability</strong> of A.</li>
+        <li><span class="highlight" title="The probability of an event irrespective of other variables.">P(B)</span> is the <strong>marginal probability</strong> of B.</li>
+    </ul>
 
-  <h1>Natural Language Processing (NLP) and Tokenization</h1>
-  <div id="content">
-    <p>
-      <span class="keyword" data-hint="A subfield of AI that enables machines to understand and process human language.">Natural Language Processing (NLP)</span> is a field of <span class="keyword" data-hint="The simulation of human intelligence in machines.">artificial intelligence</span> that focuses on the interaction between computers and humans through natural language.
-    </p>
-    <p>
-      <span class="keyword" data-hint="The process of breaking down text into smaller units like words, phrases, or symbols.">Tokenization</span> is a fundamental step in NLP where text is split into smaller units called <span class="keyword" data-hint="Individual units of text, such as words or sentences, produced by tokenization.">tokens</span>, such as words or sentences.
-    </p>
-    <p>
-      Another important concept in NLP is <span class="keyword" data-hint="The process of reducing words to their base or root form.">stemming</span>, which reduces words to their root form. For example, the words 'running', 'runs', and 'ran' can all be stemmed to the root word 'run'. This helps in simplifying <span class="keyword" data-hint="The process of extracting meaningful information from text.">text analysis</span>.
-    </p>
-  </div>
+    <p>For example, suppose you want to determine the probability of having a disease given a positive test result. Using Bayes' Theorem, you can update the probability based on the
+        <a href="https://en.wikipedia.org/wiki/Prevalence" target="_blank" class="hyperlink">prevalence</a>
+        of the disease, the accuracy of the test, and other relevant factors.</p>
 
-  <script src="script.js"></script>
+    <p>Learn more about <a href="https://towardsdatascience.com/bayes-theorem-in-machine-learning-8cb614c2a11c" target="_blank">Bayes' Theorem</a> and <a href="https://en.wikipedia.org/wiki/Thomas_Bayes" target="_blank">Thomas Bayes</a>.</p>
+
 </body>
 </html>

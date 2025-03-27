@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive ML Glossary</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Standard Deviation in Statistics</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Interactive ML Glossary</h1>
+  <div class="container">
     <p>
-        In <span class="term">Machine Learning<span class="tooltip">A subset of AI focused on building systems that learn from data</span></span>,
-        <span class="term">Supervised Learning<span class="tooltip">A type of ML where the model learns from labeled data</span></span>
-        is widely used. Other important concepts include
-        <span class="term">Unsupervised Learning<span class="tooltip">A type of ML where the model learns patterns from unlabeled data</span></span> and
-        <span class="term">Deep Learning<span class="tooltip">A type of ML that uses neural networks with multiple layers</span></span>.
+      The <span class="highlight" id="standard_deviation">standard deviation</span> is a measure of the amount of variation or dispersion in a <span class="highlight" id="dataset">dataset</span>. A low standard deviation means that the values tend to be close to the <span class="highlight" id="mean">mean</span> of the <span class="highlight" id="dataset">dataset</span>, while a high standard deviation means that the values are spread out over a wider range.
     </p>
+
+    <p>
+      <span class="tooltip" title="Standard deviation measures the amount of variation or dispersion in a set of values.">What is standard deviation?</span>
+    </p>
+
+    <p>
+      To learn more about the <span class="tooltip" title="A dataset is a collection of data, often presented in the form of a table or matrix.">dataset</span>, click <a href="https://en.wikipedia.org/wiki/Dataset" target="_blank">here</a> and for the <span class="tooltip" title="The mean is the sum of all values in a dataset divided by the number of values, commonly referred to as the average.">mean</span>, click <a href="https://en.wikipedia.org/wiki/Mean" target="_blank">here</a>.
+    </p>
+
+    <button class="btn" onclick="responsiveVoice.speak(document.body.innerText)">Read Aloud</button>
+  </div>
 </body>
 </html>

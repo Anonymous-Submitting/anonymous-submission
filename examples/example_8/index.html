@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linguist: Ferdinand de Saussure</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NLP and Tokenization</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Ferdinand de Saussure: A Founding Figure in Linguistics</h1>
-    <p>Ferdinand de Saussure, a Swiss linguist, is often considered one of the founding figures of modern linguistics. His work laid the groundwork for <span class="highlight term">structuralism</span>, a key framework in linguistic theory. One of his most influential contributions is the idea of the <span class="highlight term">linguistic sign</span>, which consists of two components: the <span class="highlight term">signifier</span> and the <span class="highlight term">signified</span>. The <span class="highlight term">signifier</span> refers to the physical form of a word or sound, while the <span class="highlight term">signified</span> is the mental concept or meaning associated with that word. Together, these two elements create the <span class="highlight term">linguistic sign</span>, which forms the basis of meaning in language. Saussure's theories on the structure of language continue to influence modern linguistic thought and are central to the study of <a href="https://en.wikipedia.org/wiki/Structuralism" target="_blank">structuralism</a>.</p>
+  <div class="controls">
+    <label for="font-select">Font:</label>
+    <select id="font-select">
+      <option value="Arial">Arial</option>
+      <option value="Times New Roman">Times New Roman</option>
+      <option value="Courier New">Courier New</option>
+      <option value="Verdana">Verdana</option>
+    </select>
 
-    <div class="tooltip">A theoretical framework in linguistics that analyzes language as a system of interrelated elements.</div>
-    <div class="tooltip">The combination of the signifier and the signified that forms the basis of language structure and meaning.</div>
-    <div class="tooltip">The physical form of a word or sound.</div>
-    <div class="tooltip">The mental concept or meaning that a word or sound refers to.</div>
+    <label for="text-size-select">Text Size:</label>
+    <select id="text-size-select">
+      <option value="text-small">Small</option>
+      <option value="text-medium">Medium</option>
+      <option value="text-large">Large</option>
+    </select>
 
-    <script src="script.js"></script>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+  </div>
+
+  <h1>Natural Language Processing (NLP) and Tokenization</h1>
+  <p>
+    <span class="keyword" data-hint="A subfield of AI that enables machines to understand and process human language.">Natural Language Processing (NLP)</span> is a field of <span class="keyword" data-hint="The simulation of human intelligence in machines.">artificial intelligence</span> that focuses on the interaction between computers and humans through natural language.
+  </p>
+  <p>
+    <span class="keyword" data-hint="The process of breaking down text into smaller units like words, phrases, or symbols.">Tokenization</span> is a fundamental step in NLP where text is split into smaller units called <span class="keyword" data-hint="Individual units of text, such as words or sentences, produced by tokenization.">tokens</span>, such as words or sentences.
+  </p>
+
+  <script src="script.js"></script>
 </body>
 </html>
