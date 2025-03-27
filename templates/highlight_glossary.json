@@ -1,0 +1,49 @@
+{
+  "title": "Interactive ML Glossary",
+  "description": "An interactive glossary of key Machine Learning terms with tooltips.",
+  "terms": [
+    {
+      "term": "Machine Learning",
+      "definition": "A subset of AI focused on building systems that learn from data"
+    },
+    {
+      "term": "Supervised Learning",
+      "definition": "A type of ML where the model learns from labeled data"
+    },
+    {
+      "term": "Unsupervised Learning",
+      "definition": "A type of ML where the model learns patterns from unlabeled data"
+    },
+    {
+      "term": "Deep Learning",
+      "definition": "A type of ML that uses neural networks with multiple layers"
+    }
+  ],
+  "styles": {
+    "term": {
+      "background-color": "#add8e6",
+      "padding": "2px 5px",
+      "border-radius": "3px",
+      "cursor": "pointer",
+      "position": "relative",
+      "display": "inline-block"
+    },
+    "tooltip": {
+      "position": "absolute",
+      "background-color": "black",
+      "color": "white",
+      "padding": "5px",
+      "border-radius": "5px",
+      "font-size": "12px",
+      "top": "100%",
+      "left": "50%",
+      "transform": "translateX(-50%)",
+      "margin-top": "5px",
+      "display": "none",
+      "white-space": "nowrap"
+    }
+  },
+  "functionality": {
+    "tooltipBehavior": "Tooltips appear when hovering over a term and disappear when the mouse moves away."
+  }
+}

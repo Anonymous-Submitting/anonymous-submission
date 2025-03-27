@@ -1,0 +1,9 @@
+{
+    "text": "The standard deviation is a measure of the amount of variation or dispersion in a dataset. A low standard deviation means that the values tend to be close to the mean of the dataset, while a high standard deviation means that the values are spread out over a wider range. To learn more about the dataset, click [here](https://en.wikipedia.org/wiki/Dataset) and for the mean, click [here](https://en.wikipedia.org/wiki/Mean).",
+    "tooltip": {
+        "standard_deviation": "Standard deviation measures the amount of variation or dispersion in a set of values.",
+        "dataset": "A dataset is a collection of data, often presented in the form of a table or matrix.",
+        "mean": "The mean is the sum of all values in a dataset divided by the number of values, commonly referred to as the average."
+    },
+    "tts": true
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Keyword Search and Highlight",
+  "description": "A webpage with a search box to highlight keywords in a text about Machine Learning.",
+  "functionality": {
+    "search": {
+      "description": "Enter a keyword in the search box and click 'Search' to highlight all matches in the text.",
+      "button": "Search"
+    },
+    "reset": {
+      "description": "Click 'Reset' to clear all highlights and restore the original text.",
+      "button": "Reset"
+    }
+  },
+  "text": "Machine Learning is a subset of AI focused on building systems that learn from data. Supervised Learning uses labeled data, while Unsupervised Learning finds patterns in unlabeled data. Deep Learning uses neural networks with multiple layers.",
+  "styles": {
+    "highlight": {
+      "background-color": "yellow",
+      "padding": "2px"
+    },
+    "input": {
+      "padding": "5px",
+      "font-size": "16px",
+      "width": "200px"
+    },
+    "button": {
+      "padding": "5px 10px",
+      "font-size": "16px",
+      "cursor": "pointer"
+    }
+  }
+}

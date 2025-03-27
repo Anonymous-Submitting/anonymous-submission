@@ -1,0 +1,47 @@
+{
+  "title": "Accordion ML Glossary",
+  "description": "An accordion-style glossary of Machine Learning terms. Each term expands to show its definition when clicked.",
+  "terms": [
+    {
+      "term": "Supervised Learning",
+      "definition": "A type of ML where the model learns from labeled data."
+    },
+    {
+      "term": "Unsupervised Learning",
+      "definition": "A type of ML where the model finds patterns in unlabeled data."
+    },
+    {
+      "term": "Deep Learning",
+      "definition": "A type of ML that uses neural networks with multiple layers."
+    },
+    {
+      "term": "Reinforcement Learning",
+      "definition": "A type of ML where an agent learns by interacting with an environment and receiving rewards."
+    }
+  ],
+  "styles": {
+    "accordion": {
+      "background-color": "#f1f1f1",
+      "color": "#333",
+      "cursor": "pointer",
+      "padding": "10px",
+      "width": "100%",
+      "text-align": "left",
+      "border": "none",
+      "outline": "none",
+      "transition": "0.4s"
+    },
+    "active": {
+      "background-color": "#ccc"
+    },
+    "panel": {
+      "padding": "0 18px",
+      "background-color": "white",
+      "display": "none",
+      "overflow": "hidden"
+    }
+  },
+  "functionality": {
+    "accordionBehavior": "Clicking a term toggles its definition panel open or closed."
+  }
+}
